@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Permanent Marker";
+  src: url('/public/PermanentMarker-Regular.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Red Hat Display";
+  src: url('/public/fonts/RedHatDisplay-VariableFont_wght.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  /* background-color: #eef0f4 !important; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.p-150 {
+  padding: 150px 0px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.tab_changes_3 {
+  padding: 150px 0px !important;
+  background-color: rgb(238, 240, 244) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.f-f-sato {
+  font-family: Sato, sans-serif !important;
+}
+
+.l-h-40 {
+  line-height: 40px !important;
+}
+
+.log_mainImage {
+  position: relative;
+  margin-bottom: -17px !important;
+  color: #8ea5a0 !important;
+  font-size: 50px !important;
+  z-index: -1 !important;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 64px !important;
+}
+
+.logo_main_image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  object-fit: contain;
+  height: 700px;
+  border-radius: 10px;
+}
+
+.t_2 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  /* font-family: Sato, sans-serif; */
+  font-size: 70px;
+  line-height: 1.1em;
+  font-weight: 500;
+}
+
+.t_1 {
+  color: #081158;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.t_0 {
+  max-width: 600px;
+}
+
+* {
+  color: #081158 !important;
+}
+
+.grid_View {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.innnercontent {
+  position: relative;
+  z-index: 2;
+  background-color: #081158;
+  /* width: 95% !important; */
+  max-width: 1450px;
+}
+
+.banner_1 {
+  background-color: #081158 !important;
+}
+
+.banner_1>*,
+.content {
+  color: white !important;
+}
+
+.bannertop {
+  background-color: #081158 !important;
+  height: 100px;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  transform: rotate(-2deg);
+  left: -1px;
+  top: -49px;
+}
+
+.bannerbottom {
+  background-color: #081158 !important;
+  height: 110px;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  transform: rotate(-2deg);
+  bottom: -50px;
+  left: -1px;
+  width: 100%
+}
+
+.bb_image {
+  max-height: 300px;
+  object-fit: cover;
+  min-width: 300px;
+  border-radius: 10px;
+}
+
+.m-400 {
+  max-width: 410px;
+}
+
+.jumbotron {
+  font-size: 90px !important;
+}
+
+.h-400 {
+  max-height: 400px !important;
+}
+
+.of-cover {
+  object-fit: cover;
+}
+
+.f-r-h {
+  font-family: "Red Hat Display";
+}
+
+.bg_svg {
+  background: url("/public/img/svg/ripple_pattern.svg");
+  background-color: #081158 !important;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+
+.br-10 {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.m-474 {
+  max-width: 474px !important;
+}
+
+
+.pr {
+  position: relative !important;
+}
+
+.fs-64 {
+  font-size: 64px;
+}
+
+.banner_2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  background: url("/public/img/svg/rippple_right_down.svg");
+  height: 85%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+
+.banner_3 {
+  background-image: url('/public/img/jpeg/banner_3.jpeg');
+  background-position: 34% 48%;
+  background-size: cover;
+}
+
+.banner_3_bg {
+  background-color: #cfddee;
+}
+
+
+.bcakgrouund{
+  background-image: url('/public/img/jpeg/dips.jpeg');
+}
+
+.mh-600{
+  height: 100%;
+  min-height: 600px !important;
+  max-height: 600px !important;
 }

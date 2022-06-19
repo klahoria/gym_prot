@@ -1,0 +1,37 @@
+.w-100 {
+    width: 100%
+}
+
+.m-474 {
+    max-width: 472px !important;
+}
+
+.border-0 {
+    border: none !important;
+}
+
+.mh-600 {
+    max-height: 600px !important;
+    min-height: 600px !important;
+    height: 100% !important;
+}
+
+.of-cover {
+    object-fit: cover !important;
+}
+
+@media (min-width:768px) {
+
+    .card_custom {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+}
+
+@media (min-width:768px) {
+    .card_custom {
+        width: 33.333333% !important;
+        max-width: 33.333333% !important;
+    }
+}

@@ -12,24 +12,9 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, reducer);
 
 // export const store = createStore(reducer, applyMiddleware(thunk));
-//
-// store.subscribe((e) => console.log(e));
-
-
-
-
-
-
-
-
-
-
-
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  // let store_configure = configureStore({
-  //   reducer: persistedReducer
-  // })
-  let store = createStore(persistReducer, applyMiddleware(thunk));
+  let store = createStore(persistedReducer, applyMiddleware(thunk));
   let persistor = persistStore(store);
   return { store, persistor };
 };

@@ -8,8 +8,7 @@ export const InitialState = {
 export const Auth = (state = InitialState, action) => {
   switch (action.type) {
     case "Log_In":
-      console.log(action.type, "reducer");
-      return "Log_In";
+      return {...InitialState,token:"BaiHoGyaTuLogin",userId:5906,email:action.payload.username}
 
     default:
       return state;

@@ -15,7 +15,9 @@ const authPersistConfig ={
 }
 
 const allReducres =  combineReducers({
-  auth: persistReducer(authPersistConfig,Auth),
+  // auth: persistReducer(authPersistConfig,Auth),
+  auth: Auth,
+
 });
 
 
